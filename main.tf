@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "rg" {
   name     = "RG-asimkhan"
   location = "westus2"
 }
-  # Create a RG
+# Create a RG
 resource "azurerm_resource_group" "rg2" {
   name     = "RG-asimkhan1"
   location = "westus2"
