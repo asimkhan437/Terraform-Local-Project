@@ -5,13 +5,14 @@ terraform {
       source = "hashicorp/azurerm"
       #version = "~> 3.0.2"
       #version = "3.1.0"
-      version = "3.14.0"
+      #version = "3.14.0"
+      version = "3.78.0"
     }
   }
 
   #required_version = ">= 1.1.0"
   #required_version = "1.2.3"
-  required_version = ">=1.5"
+  required_version = "1.6.2"
 
 }
 provider "azurerm" {
