@@ -3,12 +3,14 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 4.0"
       #version = "~> 3.0.2"
+      #version = "3.1.0"
+      version = "3.14.0"
     }
   }
 
-  required_version = ">= 1.2"
+  #required_version = ">= 1.1.0"
+  required_version = "1.2.5"
 }
 provider "azurerm" {
   features {}
@@ -19,7 +21,7 @@ resource "azurerm_resource_group" "rg" {
   name     = "RG-asimkhan"
   location = "westus2"
 }
-# Create a RG
+  # Create a RG
 resource "azurerm_resource_group" "rg2" {
   name     = "RG-asimkhan1"
   location = "westus2"
