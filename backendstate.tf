@@ -1,5 +1,6 @@
 terraform {
   backend "azurerm" {
+    use_azuread_auth     = true
     resource_group_name  = "RG-statefile"
     storage_account_name = "sastatefile"
     container_name       = "statefile"
