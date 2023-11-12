@@ -11,7 +11,9 @@ terraform {
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
-  subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
+  subscription_id  = "882939ed-a914-4c3c-8161-a98856cc86f2"
+  use_azuread_auth = true
+  use_oidc         = true
 
 }
 
@@ -28,7 +30,7 @@ resource "azurerm_resource_group" "rg2" {
   tags = {
     Environment  = "Terraform Getting Started"
     Team         = "DevOps"
-    Organisation = "NewOrg123"
+    Organisation = "NewOrg12"
   }
 }
 
