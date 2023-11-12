@@ -24,7 +24,7 @@ resource "azurerm_resource_group" "rg2" {
   tags = {
     Environment  = "Terraform Getting Started"
     Team         = "DevOps"
-    Organisation = "NewOrg12"
+    Organisation = "NewOrg123"
   }
 }
 
