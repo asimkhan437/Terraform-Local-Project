@@ -12,8 +12,7 @@ terraform {
 provider "azurerm" {
   features {}
   subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
-  client_id       = "490d298d-1228-4642-b248-b7733d50b1dd"
-  tenant_id       = "faaba21d-945d-4e9e-9e9b-6366b1018a31"
+
 }
 
 # Create a RG
