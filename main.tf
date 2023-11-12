@@ -7,9 +7,11 @@ terraform {
     }
   }
 }
+
 provider "azurerm" {
-  features {}
-  subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
+features {}
+ subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
+  
 }
 
 # Create a RG
