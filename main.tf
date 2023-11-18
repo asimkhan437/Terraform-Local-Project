@@ -10,9 +10,11 @@ terraform {
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-  subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
   features {}
-
+  client_id       = "490d298d-1228-4642-b248-b7733d50b1dd"
+  client_secret   = "3d4beaf7-25c1-478e-92ea-d00b57f12b2f"
+  tenant_id       = "faaba21d-945d-4e9e-9e9b-6366b1018a31"
+  subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
 }
 
 # Create a RG
@@ -28,7 +30,7 @@ resource "azurerm_resource_group" "rg2" {
   tags = {
     Environment  = "Terraform Getting Started"
     Team         = "DevOps"
-    Organisation = "NewOrg123"
+    Organisation = "NewOrg12"
   }
 }
 
