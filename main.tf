@@ -10,6 +10,7 @@ terraform {
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
+  subscription_id = "882939ed-a914-4c3c-8161-a98856cc86f2"
   features {}
 
 }
@@ -58,6 +59,7 @@ resource "azurerm_storage_account" "storageac" {
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
+  count                    = 3
 }
 
 #Create an AKS with new RG
