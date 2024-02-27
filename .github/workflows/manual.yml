@@ -14,7 +14,7 @@ env:
   WORKING_DIR: src
   BUILD_CONFIG: Debug
   PROJECT_FILE: RazType.csproj # `dotnet publish` requires the does not work when specifying the .sln file
-  APPSERVICE_NAME: raztype
+  APPSERVICE_NAME: asimkhan
   APPSERVICE_SLOT: Production
   PACKAGE_PATH: '/publish' # Specifying '/' at the beginning of the path is required due to differences in action working-directory.
 
